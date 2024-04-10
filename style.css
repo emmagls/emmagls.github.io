@@ -8,6 +8,7 @@ html, body{
 }
 body{
     letter-spacing: 0.06rem;
+    margin: 0px;
 }
 nav{
    flex-direction: row;
@@ -25,8 +26,8 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 0;
-    margin: 0;
+    padding-top: 70px;
+    margin-top: 40px;
     color: black;
 }
 a{
@@ -46,12 +47,13 @@ a:hover{
 }
 .logo{
     width: 250px;
+    padding-left: 100px;
 }
-.avatar{
+.panier{
     text-decoration: none;
     align-items: center;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .navigation{
     flex-wrap: nowrap;
@@ -119,10 +121,12 @@ h1{
     transition: all .3s ease-in-out;
     color: white;
     border: 2px solid white;
+    border-radius: 4px;
 }
 p{
     padding-bottom: 20px;
     margin: 0px;
+    text-align: center;
 }
 .card{
     width:300px;
@@ -142,6 +146,8 @@ p{
     flex-direction: row;
     gap: 16px;
     justify-content: space-between;
+    padding-bottom: 75px;
+    flex-wrap: wrap;
  }
  .card img{
     width: 100%;
@@ -153,14 +159,118 @@ p{
     text-decoration: none;
     padding: 8px;
     transition: all .3s ease-in-out;
-    background: #8005F2;
     color: white;
-    border: 2px solid #8005F2;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    width: 60%;
 }
 .title-card{
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 300px;
+    height: 70px;
  }
- 
+ #qualités img{
+    width: 125px;
+ }
+ #qualités{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-around;
+ }
+ .card-qualités{
+    width:300px;
+    height:auto;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+    border: 2px solid white;
+ }
+ #avis{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+ }
+ .card-avis{
+    width:400px;
+    height:auto;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: #f7f1ed;
+    transition: 0.5s;
+}
+.card-img{
+    display: flex;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+h2{
+    max-width: 60%;
+    font-size: 19px;
+}
+h3{
+    font-size: 15px;
+}
+.h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+footer{
+    background-color: #f7f1ed;
+}
+.avatar {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.card-container-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.card-container-avis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.flower{
+    width: 25px;
+    height: 25px;
+    
+}
+#flow{
+    opacity: 0.3;
+}
+.buttons-add:hover{
+    transform: scale(1.1);
+}
+.buttons-primary:hover{
+    transform: scale(1.1);
+}
+.card-avis:hover{
+    transform: scale(1.1);
+}
